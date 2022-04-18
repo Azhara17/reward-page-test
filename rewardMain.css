@@ -1,0 +1,302 @@
+* {
+  font-family: "Eina 01", sans-serif;
+  color: #0b1e47;
+}
+
+.gw-reward-page__banner-wrapper {
+  width: 100%;
+  text-align: center;
+}
+
+.gw-reward-page__banner {
+  width: 100%;
+  max-height: 300px;
+}
+
+.gw-reward-page__banner-content {
+  width: 100%;
+  position: absolute;
+  top: 15%;
+}
+
+.gw-reward-page__banner-header {
+  line-height: 1;
+}
+
+.gw-reward-page__banner-join {
+  width: 254px;
+  height: 46px;
+  margin-top: 30px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 28px;
+  color: #0b1e47;
+  background: #ffffff;
+  border: 1px solid #0b1e47;
+  box-sizing: border-box;
+  border-radius: 6px;
+}
+
+.gw-container .ssw-reward-btn {
+  width: auto;
+  text-align: initial;
+  background: var(--gw_reward_buttons_color, var(--gw_main_color));
+  padding: 15px 13px 13px 13px;
+  border: none;
+  border-radius: var(--gw_main_border_radius, 2px);
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: var(--gw_main_ft_family, "Roboto", sans-serif);
+  cursor: pointer;
+  line-height: 1;
+}
+
+.gw-container .ssw-reward-btn:hover,
+.gw-container .ssw-reward-btn:active {
+  background: var(--gw_reward_buttons_color, var(--gw_main_color));
+  color: #fff;
+}
+
+.gw-container .ssw-reward-btn::before,
+.gw-container .ssw-reward-btn::after {
+  display: none;
+}
+
+.gw-reward-page__header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #fff;
+  margin-bottom: 20px;
+  padding: 6px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.gw-reward-page__menu {
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+}
+
+.gw-reward-page__balance-count,
+.gw-reward-page__tier-text {
+  font-size: 12px;
+  letter-spacing: 0.01em;
+}
+
+.gw-reward-page__balance-text,
+.gw-reward-page__tier-status {
+  font-size: 20px;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.gw-reward-page-menu.gw-active:after {
+  content: " ";
+  width: 100%;
+  height: 3px;
+  position: absolute;
+  display: block;
+  left: -3px;
+  bottom: -3px;
+  background: var(--gw_reward_buttons_color, var(--gw_main_color));
+}
+
+.gw-reward-page__header_right {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.gw-reward-page__header_left {
+  width: 75%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.gw-reward-page__header_right__divider {
+  width: 34px;
+  height: 0px;
+  left: 158px;
+  border: 0.5px solid rgba(11, 30, 71, 0.3);
+  transform: rotate(90deg);
+}
+
+.gw-reward-page__card {
+  width: 33%;
+  max-width: 145px;
+  text-align: left;
+}
+
+.gw-reward-page__section {
+  padding: 80px 0;
+}
+
+.gw-reward-page__section-title {
+  margin-bottom: 42px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 28px;
+}
+
+.gw-reward-page__section-card {
+  padding: 0 200px;
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+}
+
+.gw-reward-page__card-number {
+  width: 50px;
+  height: 50px;
+  background: #0b1e47;
+  border-radius: 50%;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gw-reward-page__card-title {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.gw-reward-page__card-text {
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.gw-reward-page__card-btn {
+  width: 195px;
+  padding: 11px;
+  border: 1px solid #0b1e47;
+  border-radius: 5px;
+  font-weight: 400;
+  font-size: 16px;
+  background: #fff;
+}
+
+.gw-reward-page__card-btn:hover {
+  color: #fff;
+  background-color: #0b1e47;
+  cursor: pointer;
+}
+
+.gw-reward-page__redeem-points-content {
+  display: block;
+}
+
+.gw-reward-page__redeem-points-content-text {
+  margin-bottom: 80px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.gw-reward-page__redeem-points {
+  display: block;
+  background: rgba(11, 30, 71, 0.03);
+}
+
+.gw-reward-page__available-rewards {
+  padding: 185px 200px;
+}
+
+.gw-reward-page__available-rewards__title {
+  display: flex;
+  text-align: left;
+}
+
+.gw-reward-page__available-rewards__tooltip {
+  width: fit-content;
+  display: none;
+  margin-top: -15px;
+  padding: 8px 12px;
+  font-size: 14px;
+  font-weight: 400;
+  background-color: rgba(11, 30, 71, 0.04);
+}
+
+.gw-reward-page__available-rewards__tooltip__icon {
+  margin-left: 5px;
+}
+
+.gw-reward-page__available-rewards__tooltip__icon:hover
+  .gw-reward-page__available-rewards__tooltip {
+  display: block;
+}
+
+.gw-reward-page__available-rewards__card {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 32px 20px 0;
+  padding: 22px;
+  text-align: center;
+  border-radius: 5%;
+  box-shadow: -2px 2px 20px rgba(0, 0, 0, 0.05);
+}
+
+.gw-reward-page__available-rewards__icon {
+  width: 66px;
+  height: 66px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  box-shadow: -2px 2px 20px rgba(0, 0, 0, 0.05);
+}
+
+.gw-reward-page__available-rewards__cards-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.gw-reward-page__available-rewards__card-text {
+  margin-bottom: 16px;
+  margin-top: 12px;
+}
+
+.gw-reward-page__reward-item {
+  padding: 8px;
+  background: rgba(0, 186, 238, 0.05);
+  border: 0.5px solid rgba(0, 186, 238, 0.15);
+  border-radius: 6px;
+}
+
+.gw-reward-page__reward-item__code {
+  display: inline-flex;
+}
+
+.gw-reward-page__reward-item__copy-icon {
+  margin-left: 40px;
+}
+.gw-reward-page__reward-item__redeem-form__info {
+  display: flex;
+  border-bottom: 0.5px solid #0b1e47;
+}
+
+.gw-reward-page__reward-item__redeem-form__info-column {
+  width: 50%;
+}
+
+.gw-reward-page__reward-item__redeem-form__info-column:last-child {
+  border-left: 0.5px solid #0b1e47;
+}
+.gw-reward-item__redeem-form__discount-amount {
+  display: block;
+}
+
+.gw-reward-page__reward-item__redeem-form__discount-range-wrapper {
+  display: flex;
+  justify-content: center;
+}

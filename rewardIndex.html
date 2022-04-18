@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rewards</title>
+    <link rel="stylesheet" href="rewardMain.css" />
+  </head>
+  <body>
+    <div id="gw-page">
+      <div class="gw-reward-hidden-page__loading gw-page__loading">
+        <span class="gw-spin gw-loader"></span>
+      </div>
+      <div
+        class="gw-reward-page gw-reward-hidden-page gw-hide gw-customer__logged-in"
+      >
+        <div class="gw-reward-page__banner-wrapper">
+          <img
+            class="gw-reward-page__banner"
+            src="/assets/reward-banner.jpeg"
+            alt="Reward banner"
+          />
+          <div class="gw-reward-page__banner-content">
+            <h2 class="gw-reward-page__banner-header">
+              Join Our Reward Program
+            </h2>
+            <p class="gw-reward-page__banner-text">
+              and earn points to get discount for your future purchases
+            </p>
+            <button
+              class="gw-reward-page__banner-join gw-fsize-ms"
+              data-toggle="ssw-modal"
+              data-target="#login_modal"
+            >
+              Join
+            </button>
+          </div>
+        </div>
+        <div class="gw-reward-page__content">
+          <div class="gw-reward-page__header">
+            <div class="gw-reward-page__header_left">
+              <div
+                class="gw-reward-page__menu gw-active"
+                data-target="#ssw-reward-page-rewards-wrapper"
+                data-content-target=".ssw-reward-page-content"
+              >
+                Rewards
+              </div>
+              <div
+                class="gw-reward-page__menu gw-active"
+                data-target="#ssw-reward-page-earning-rule-wrapper"
+                data-content-target=".ssw-reward-page-content"
+              >
+                Earn Points
+              </div>
+              <div
+                class="gw-reward-page__menu gw-reward-page__menu-viptiers"
+                data-target="#ssw-reward-page-tiers-wrapper"
+                data-content-target=".ssw-reward-page-content"
+              >
+                Tiers
+              </div>
+              <div
+                class="gw-reward-page__menu gw-reward-page__menu-referral"
+                data-target=""
+                data-content-target=".ssw-reward-page-content"
+              >
+                Referral Program
+              </div>
+              <div
+                class="gw-reward-page__menu"
+                data-target="#ssw-reward-page-activity-wrapper"
+                data-content-target=".ssw-reward-page-content"
+              >
+                History
+              </div>
+              <div
+                class="gw-reward-page__menu"
+                data-target="#ssw-reward-page-faq-wrapper"
+                data-content-target=".ssw-reward-page-content"
+              >
+                FAQ
+              </div>
+            </div>
+            <div class="gw-reward-page__header_right">
+              <div class="gw-reward-page__balance">
+                <i class="gw-reward-page__balance-icon"></i>
+                <div class="gw-reward-page__balance-info">
+                  <div class="gw-reward-page__balance-count">Your Balance</div>
+                  <div class="gw-reward-page__balance-text">1200</div>
+                </div>
+              </div>
+              <div class="gw-reward-page__header_right__divider"></div>
+              <div class="gw-reward-page__tier">
+                <div class="gw-reward-page__tier-text">Your Tier</div>
+                <div class="gw-reward-page__tier-status">Gold</div>
+              </div>
+            </div>
+          </div>
+          <div class="gw-reward-page__section gw-reward-page__free-bonuses">
+            <div
+              class="gw-reward-page__section-title gw-reward-page__free-bonuses-title"
+            >
+              Earn Free Bonuses
+            </div>
+            <div
+              class="gw-reward-page__section-card gw-reward-page__free-bonuses-content"
+            >
+              <div
+                class="gw-reward-page__free-bonuses-content__signup gw-reward-page__card"
+              >
+                <p class="gw-reward-page__card-number">1</p>
+                <div class="gw-reward-page__card-title">Sign Up</div>
+                <p class="gw-reward-page__card-text">
+                  Create a free account to start earning reward points
+                </p>
+                <button class="gw-reward-page__card-btn">Sign Up</button>
+              </div>
+              <div
+                class="gw-reward-page__free-bonuses-content__earn-points gw-reward-page__card"
+              >
+                <p class="gw-reward-page__card-number">2</p>
+                <div class="gw-reward-page__card-title">Earn Points</div>
+                <p class="gw-reward-page__card-text">
+                  There are many ways to earn points, simply interact with the
+                  store to earn bonuses
+                </p>
+                <button class="gw-reward-page__card-btn">Earn Points</button>
+              </div>
+              <div
+                class="gw-reward-page__free-bonuses-content__redeem gw-reward-page__card"
+              >
+                <p class="gw-reward-page__card-number">3</p>
+                <div class="gw-reward-page__card-title">Redeem</div>
+                <p class="gw-reward-page__card-text">
+                  Choose how to spend your points from a list of rewards
+                </p>
+                <button class="gw-reward-page__card-btn">Redeem Points</button>
+              </div>
+            </div>
+          </div>
+          <div class="gw-reward-page__section gw-reward-page__redeem-points">
+            <div
+              class="gw-reward-page__section-title gw-reward-page__redeem-points-title"
+            >
+              How To Redeem Points
+            </div>
+            <div
+              class="gw-reward-page__section-card gw-reward-page__redeem-points-content"
+            >
+              <div class="gw-reward-page__redeem-points-content-text">
+                <div
+                  class="gw-reward-page__redeem-points-content__signup gw-reward-page__card"
+                >
+                  <p class="gw-reward-page__card-number">1</p>
+                  <div class="gw-reward-page__card-title">
+                    Select a reward from the available options
+                  </div>
+                </div>
+                <div
+                  class="gw-reward-page__free-bonuses-content__earn-points gw-reward-page__card"
+                >
+                  <p class="gw-reward-page__card-number">2</p>
+                  <div class="gw-reward-page__card-title">
+                    Exchange your points for the selected reward
+                  </div>
+                </div>
+                <div
+                  class="gw-reward-page__free-bonuses-content__redeem gw-reward-page__card"
+                >
+                  <p class="gw-reward-page__card-number">3</p>
+                  <div class="gw-reward-page__card-title">
+                    Apply the reward to your purchase
+                  </div>
+                </div>
+              </div>
+              <button class="gw-reward-page__card-btn">Got it</button>
+            </div>
+          </div>
+          <div
+            class="gw-reward-page__section gw-reward-page__available-rewards"
+          >
+            <div
+              class="gw-reward-page__section-title gw-reward-page__available-rewards__title"
+            >
+              Available Rewards
+              <i class="gw-reward-page__available-rewards__tooltip__icon"
+                ><svg
+                  width="22"
+                  height="22"
+                  viewBox="0 0 22 22"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g opacity="0.7">
+                    <g clip-path="url(#clip0_1185_21187)">
+                      <path
+                        d="M10.9994 21.0833C9.05606 21.0833 7.16773 20.5333 5.54523 19.4792C5.12356 19.2042 4.99523 18.6358 5.27023 18.2142C5.54523 17.7925 6.11356 17.6642 6.53523 17.9392C7.86439 18.8008 9.41356 19.25 10.9994 19.25C15.5461 19.25 19.2494 15.5467 19.2494 11C19.2494 8.70834 18.2869 6.49918 16.6002 4.94084C16.2244 4.59251 16.2061 4.01501 16.5544 3.64834C16.9027 3.27251 17.4802 3.25418 17.8469 3.60251C19.9002 5.50001 21.0827 8.19501 21.0827 11C21.0827 16.5642 16.5636 21.0833 10.9994 21.0833Z"
+                        fill="#0B1E47"
+                      />
+                      <path
+                        d="M3.29965 16.8851C2.99715 16.8851 2.70382 16.7385 2.52965 16.4635C1.47549 14.841 0.916321 12.9526 0.916321 11.0001C0.916321 5.43598 5.43549 0.916809 10.9997 0.916809C13.548 0.916809 15.9772 1.87014 17.8472 3.60264C18.223 3.95098 18.2413 4.52848 17.893 4.89514C17.5447 5.27098 16.9672 5.28931 16.6005 4.94098C15.0697 3.52931 13.0805 2.75014 10.9997 2.75014C6.45299 2.75014 2.74965 6.45348 2.74965 11.0001C2.74965 12.5951 3.20799 14.1443 4.06965 15.4735C4.34465 15.8951 4.22549 16.4635 3.79465 16.7385C3.63882 16.8393 3.46465 16.8851 3.29965 16.8851Z"
+                        fill="#0B1E47"
+                      />
+                      <path
+                        d="M10.9997 5.1702C10.4783 5.1702 10.0556 5.59292 10.0556 6.11437C10.0556 6.63582 10.4783 7.05853 10.9997 7.05853C11.5212 7.05853 11.9439 6.63582 11.9439 6.11437C11.9439 5.59292 11.5212 5.1702 10.9997 5.1702Z"
+                        fill="#0B1E47"
+                      />
+                      <path
+                        d="M10.9995 8.1493C11.5037 8.1493 11.9162 8.5618 11.9162 9.06596L11.9162 15.9685C11.9162 16.4726 11.5037 16.8851 10.9995 16.8851C10.4953 16.8851 10.0828 16.4726 10.0828 15.9685L10.0828 9.07513C10.0828 8.5618 10.4953 8.1493 10.9995 8.1493Z"
+                        fill="#0B1E47"
+                      />
+                    </g>
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_1185_21187">
+                      <rect
+                        width="20.1667"
+                        height="20.1667"
+                        fill="white"
+                        transform="translate(0.916656 0.916656)"
+                      />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </i>
+              <p class="gw-reward-page__available-rewards__tooltip">
+                You decide how to spend your points
+              </p>
+            </div>
+            <div class="gw-reward-page__available-rewards__cards-wrapper">
+              <div class="gw-reward-page__available-rewards__card">
+                <i
+                  class="gw-reward-page__available-rewards__icon gw-reward-page__available-rewards__card-amount-discount"
+                >
+                  <svg
+                    width="30"
+                    height="30"
+                    viewBox="0 0 30 30"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M18.8066 29.3232C18.4557 29.3232 18.1182 29.1899 17.8482 28.9366L5.26714 16.4966C5.02415 16.2566 4.88916 15.9499 4.87567 15.6166L4.61918 10.2832C4.57869 9.5499 5.15914 8.92324 5.90159 8.88324C6.63054 8.85657 7.27849 9.41657 7.31898 10.1499L7.54847 14.9766L18.8201 26.1099L27.041 17.9899C27.5675 17.4699 28.4179 17.4699 28.9444 17.9899C29.4708 18.5099 29.4708 19.3499 28.9444 19.8699L19.7651 28.9366C19.4951 29.1899 19.1576 29.3232 18.8066 29.3232Z"
+                      fill="#0B1E47"
+                    />
+                    <path
+                      d="M24.963 16.47C24.6121 16.47 24.2746 16.3367 24.0046 16.0833L15.2168 7.40333L5.63246 6.95C5.29498 6.93667 4.98451 6.79 4.74152 6.56333L0.394846 2.27C-0.131615 1.75 -0.131615 0.91 0.394846 0.39C0.921307 -0.13 1.77174 -0.13 2.29821 0.39L6.28041 4.32333L15.8647 4.77667C16.2022 4.79 16.5127 4.93667 16.7556 5.16333L25.9215 14.2167C26.4479 14.7367 26.4479 15.5767 25.9215 16.0967C25.6515 16.3367 25.3005 16.47 24.963 16.47Z"
+                      fill="#0B1E47"
+                    />
+                    <path
+                      d="M12.3276 13.8301C13.4459 13.8301 14.3524 12.9346 14.3524 11.8301C14.3524 10.7255 13.4459 9.83008 12.3276 9.83008C11.2093 9.83008 10.3027 10.7255 10.3027 11.8301C10.3027 12.9346 11.2093 13.8301 12.3276 13.8301Z"
+                      fill="#0B1E47"
+                    />
+                  </svg>
+                </i>
+                <p class="gw-reward-page__available-rewards__card-text">
+                  Amount discount
+                </p>
+                <div class="gw-reward-page__reward-item">
+                  <div class="gw-reward-page__reward-item__code">
+                    <div class="gw-reward-page__reward-item__btn">
+                      AC92C41877B3
+                    </div>
+                    <svg
+                      class="gw-reward-page__reward-item__copy-icon"
+                      width="18"
+                      height="18"
+                      viewBox="0 0 18 18"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M13.5993 2H7.25935C6.38602 2 5.66602 2.71333 5.66602 3.59333V5.66667H6.99935V3.59333C6.99935 3.44667 7.11935 3.33333 7.25935 3.33333H13.5993C13.7393 3.33333 13.8594 3.44667 13.8594 3.59333V10.3267C13.8594 10.4667 13.746 10.5867 13.5993 10.5867H11.5193V11.92H13.5993C14.4793 11.92 15.1927 11.2067 15.1927 10.3267V3.59333C15.186 2.71333 14.4727 2 13.5993 2Z"
+                        fill="#0B1E47"
+                      />
+                      <path
+                        d="M9.92667 5.66669H7H5.66667H3.59333C2.71333 5.66669 2 6.38002 2 7.26002V11.0467C2 11.4134 2.3 11.7134 2.66667 11.7134C3.03333 11.7134 3.33333 11.4134 3.33333 11.0467V7.26002C3.33333 7.12002 3.44667 7.00002 3.59333 7.00002H5.66667H7H9.92667C10.0667 7.00002 10.1867 7.11335 10.1867 7.26002V10.58V11.9134V13.9934C10.1867 14.1334 10.0733 14.2534 9.92667 14.2534H3.59333C3.44667 14.2534 3.33333 14.14 3.33333 13.9934V13.5934C3.33333 13.2267 3.03333 12.9267 2.66667 12.9267C2.3 12.9267 2 13.2267 2 13.5934V13.9934C2 14.8734 2.71333 15.5867 3.59333 15.5867H9.93333C10.8133 15.5867 11.5267 14.8734 11.5267 13.9934V11.9134V10.58V7.26002C11.52 6.38002 10.8067 5.66669 9.92667 5.66669Z"
+                        fill="#0B1E47"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="gw-reward-page__available-rewards__card">
+                <i
+                  class="gw-reward-page__available-rewards__icon gw-reward-page__available-rewards__percentage-discount"
+                >
+                  <svg
+                    width="32"
+                    height="32"
+                    viewBox="0 0 32 32"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M16 30.6667C13.1733 30.6667 10.4267 29.8667 8.06666 28.3333C7.45333 27.9333 7.26666 27.1067 7.66666 26.4933C8.06666 25.88 8.89333 25.6933 9.50666 26.0933C11.44 27.3467 13.6933 28 16 28C22.6133 28 28 22.6133 28 16C28 12.6667 26.6 9.45334 24.1467 7.18667C23.6 6.68001 23.5733 5.84001 24.08 5.30667C24.5867 4.76001 25.4267 4.73334 25.96 5.24001C28.9467 8.00001 30.6667 11.92 30.6667 16C30.6667 24.0933 24.0933 30.6667 16 30.6667Z"
+                      fill="#0B1E47"
+                    />
+                    <path
+                      d="M4.79999 24.56C4.35999 24.56 3.93333 24.3466 3.67999 23.9466C2.14666 21.5866 1.33333 18.84 1.33333 16C1.33333 7.90665 7.90666 1.33331 16 1.33331C19.7067 1.33331 23.24 2.71998 25.96 5.23998C26.5067 5.74665 26.5333 6.58665 26.0267 7.11998C25.52 7.65331 24.68 7.69331 24.1467 7.18665C21.92 5.13331 19.0267 3.99998 16 3.99998C9.38666 3.99998 3.99999 9.38665 3.99999 16C3.99999 18.32 4.66666 20.5733 5.91999 22.5066C6.31999 23.12 6.14666 23.9466 5.51999 24.3466C5.29333 24.4933 5.03999 24.56 4.79999 24.56Z"
+                      fill="#0B1E47"
+                    />
+                    <path
+                      d="M11.48 14.1466C12.9528 14.1466 14.1467 12.9527 14.1467 11.48C14.1467 10.0072 12.9528 8.81329 11.48 8.81329C10.0072 8.81329 8.81332 10.0072 8.81332 11.48C8.81332 12.9527 10.0072 14.1466 11.48 14.1466Z"
+                      fill="#0B1E47"
+                    />
+                    <path
+                      d="M20.4267 23.0933C21.8994 23.0933 23.0933 21.8994 23.0933 20.4267C23.0933 18.9539 21.8994 17.76 20.4267 17.76C18.9539 17.76 17.76 18.9539 17.76 20.4267C17.76 21.8994 18.9539 23.0933 20.4267 23.0933Z"
+                      fill="#0B1E47"
+                    />
+                    <path
+                      d="M10.48 22.8133C10.1333 22.8133 9.79999 22.68 9.53333 22.4266C9.01333 21.9066 9.01333 21.0666 9.53333 20.5466L20.5467 9.53331C21.0667 9.01331 21.9067 9.01331 22.4267 9.53331C22.9467 10.0533 22.9467 10.8933 22.4267 11.4133L11.4133 22.4266C11.16 22.6933 10.8133 22.8133 10.48 22.8133Z"
+                      fill="#0B1E47"
+                    />
+                  </svg>
+                </i>
+                <p class="gw-reward-page__available-rewards__card-text">
+                  Percentage discount
+                </p>
+                <div class="gw-reward-page__reward-item">
+                  <div class="gw-reward-page__reward-item__code">
+                    <div class="gw-reward-page__reward-item__btn">
+                      AC92C41877B3
+                    </div>
+                    <svg
+                      class="gw-reward-page__reward-item__copy-icon"
+                      width="18"
+                      height="18"
+                      viewBox="0 0 18 18"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M13.5993 2H7.25935C6.38602 2 5.66602 2.71333 5.66602 3.59333V5.66667H6.99935V3.59333C6.99935 3.44667 7.11935 3.33333 7.25935 3.33333H13.5993C13.7393 3.33333 13.8594 3.44667 13.8594 3.59333V10.3267C13.8594 10.4667 13.746 10.5867 13.5993 10.5867H11.5193V11.92H13.5993C14.4793 11.92 15.1927 11.2067 15.1927 10.3267V3.59333C15.186 2.71333 14.4727 2 13.5993 2Z"
+                        fill="#0B1E47"
+                      />
+                      <path
+                        d="M9.92667 5.66669H7H5.66667H3.59333C2.71333 5.66669 2 6.38002 2 7.26002V11.0467C2 11.4134 2.3 11.7134 2.66667 11.7134C3.03333 11.7134 3.33333 11.4134 3.33333 11.0467V7.26002C3.33333 7.12002 3.44667 7.00002 3.59333 7.00002H5.66667H7H9.92667C10.0667 7.00002 10.1867 7.11335 10.1867 7.26002V10.58V11.9134V13.9934C10.1867 14.1334 10.0733 14.2534 9.92667 14.2534H3.59333C3.44667 14.2534 3.33333 14.14 3.33333 13.9934V13.5934C3.33333 13.2267 3.03333 12.9267 2.66667 12.9267C2.3 12.9267 2 13.2267 2 13.5934V13.9934C2 14.8734 2.71333 15.5867 3.59333 15.5867H9.93333C10.8133 15.5867 11.5267 14.8734 11.5267 13.9934V11.9134V10.58V7.26002C11.52 6.38002 10.8067 5.66669 9.92667 5.66669Z"
+                        fill="#0B1E47"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="gw-reward-page__available-rewards__card">
+                <i
+                  class="gw-reward-page__available-rewards__icon gw-reward-page__available-rewards__percentage-discount"
+                >
+                  <svg
+                    width="32"
+                    height="32"
+                    viewBox="0 0 32 32"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12.5288 14.7956H3.98606C3.25306 14.7956 2.65334 14.1942 2.65334 13.4591C2.65334 12.724 3.25306 12.1226 3.98606 12.1226H12.5288C13.2618 12.1226 13.8616 12.724 13.8616 13.4591C13.8616 14.1942 13.2618 14.7956 12.5288 14.7956Z"
+                      fill="#0B1E47"
+                    />
+                    <path
+                      d="M8.26352 18.7382H2.66606C1.93306 18.7382 1.33334 18.1368 1.33334 17.4017C1.33334 16.6667 1.93306 16.0652 2.66606 16.0652H8.26352C8.99652 16.0652 9.59625 16.6667 9.59625 17.4017C9.59625 18.1368 8.99652 18.7382 8.26352 18.7382Z"
+                      fill="#0B1E47"
+                    />
+                    <path
+                      d="M8.72999 22.5872C8.47677 22.5872 8.26354 22.3734 8.26354 22.1195V21.0102C8.26354 20.2751 7.66381 19.6737 6.93081 19.6737C6.19781 19.6737 5.59808 20.2751 5.59808 21.0102V22.1195C5.59808 23.8569 7.01077 25.2602 8.72999 25.2602H10.0361V22.5872H8.72999Z"
+                      fill="#0B1E47"
+                    />
+                    <path
+                      d="M18.6588 5.33331H8.72999C6.99745 5.33331 5.59808 6.74998 5.59808 8.47404V9.79715C5.59808 10.5322 6.19781 11.1336 6.93081 11.1336C7.66381 11.1336 8.26354 10.5322 8.26354 9.79715V8.47404C8.26354 8.22011 8.46345 8.00627 8.72999 8.00627H18.6588C18.912 8.00627 19.1253 8.22011 19.1253 8.47404V22.1195C19.1253 22.3734 18.912 22.5872 18.6588 22.5872H14.4207V25.2602H18.6588C20.3914 25.2602 21.7907 23.8435 21.7907 22.1195V8.47404C21.7907 6.74998 20.3914 5.33331 18.6588 5.33331Z"
+                      fill="#0B1E47"
+                    />
+                    <path
+                      d="M11.7553 27.9733C9.51628 27.9733 7.70377 26.1556 7.70377 23.9104C7.70377 21.6651 9.51628 19.8475 11.7553 19.8475C13.9942 19.8475 15.8068 21.6651 15.8068 23.9104C15.8068 26.1556 13.9809 27.9733 11.7553 27.9733ZM11.7553 22.5204C10.9956 22.5204 10.3692 23.1486 10.3692 23.9104C10.3692 24.6722 10.9956 25.3003 11.7553 25.3003C12.5149 25.3003 13.1413 24.6722 13.1413 23.9104C13.1413 23.1486 12.5149 22.5204 11.7553 22.5204Z"
+                      fill="#0B1E47"
+                    />
+                    <path
+                      d="M30.2935 17.0408C30.2668 16.9473 26.8018 10.599 26.8018 10.599C26.5619 10.1713 26.1221 9.90405 25.629 9.90405H20.6579C19.9249 9.90405 19.3252 10.5055 19.3252 11.2405C19.3252 11.9756 19.9249 12.577 20.6579 12.577H24.8426L26.2553 15.143H22.4837C20.6312 15.143 19.1119 16.6533 19.1119 18.5243V21.8923C19.1119 23.75 20.6179 25.2736 22.4837 25.2736V22.6006C22.0972 22.6006 21.7774 22.2798 21.7774 21.8923V18.511C21.7774 18.1234 22.0972 17.8026 22.4837 17.8026H27.2815C27.668 17.8026 27.9879 18.1234 27.9879 18.511V21.8789C27.9879 22.2665 27.668 22.5872 27.2815 22.5872H27.055V25.2602H27.2949C29.1474 25.2602 30.6667 23.75 30.6667 21.8789V18.511C30.6533 17.9764 30.5201 17.4819 30.2935 17.0408Z"
+                      fill="#0B1E47"
+                    />
+                    <path
+                      d="M24.9892 28C22.7503 28 20.9377 26.1824 20.9377 23.9371C20.9377 21.6918 22.7503 19.8742 24.9892 19.8742C27.2282 19.8742 29.0407 21.6918 29.0407 23.9371C29.0407 26.1824 27.2282 28 24.9892 28ZM24.9892 22.5472C24.2296 22.5472 23.6032 23.1753 23.6032 23.9371C23.6032 24.6989 24.2296 25.327 24.9892 25.327C25.7489 25.327 26.3753 24.6989 26.3753 23.9371C26.3753 23.1753 25.7622 22.5472 24.9892 22.5472Z"
+                      fill="#0B1E47"
+                    />
+                  </svg>
+                </i>
+                <p class="gw-reward-page__available-rewards__card-text">
+                  Free shipping
+                </p>
+                <div class="gw-reward-page__reward-item">
+                  <div class="gw-reward-page__reward-item__code">
+                    <div class="gw-reward-page__reward-item__btn">
+                      AC92C41877B3
+                    </div>
+                    <svg
+                      class="gw-reward-page__reward-item__copy-icon"
+                      width="18"
+                      height="18"
+                      viewBox="0 0 18 18"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M13.5993 2H7.25935C6.38602 2 5.66602 2.71333 5.66602 3.59333V5.66667H6.99935V3.59333C6.99935 3.44667 7.11935 3.33333 7.25935 3.33333H13.5993C13.7393 3.33333 13.8594 3.44667 13.8594 3.59333V10.3267C13.8594 10.4667 13.746 10.5867 13.5993 10.5867H11.5193V11.92H13.5993C14.4793 11.92 15.1927 11.2067 15.1927 10.3267V3.59333C15.186 2.71333 14.4727 2 13.5993 2Z"
+                        fill="#0B1E47"
+                      />
+                      <path
+                        d="M9.92667 5.66669H7H5.66667H3.59333C2.71333 5.66669 2 6.38002 2 7.26002V11.0467C2 11.4134 2.3 11.7134 2.66667 11.7134C3.03333 11.7134 3.33333 11.4134 3.33333 11.0467V7.26002C3.33333 7.12002 3.44667 7.00002 3.59333 7.00002H5.66667H7H9.92667C10.0667 7.00002 10.1867 7.11335 10.1867 7.26002V10.58V11.9134V13.9934C10.1867 14.1334 10.0733 14.2534 9.92667 14.2534H3.59333C3.44667 14.2534 3.33333 14.14 3.33333 13.9934V13.5934C3.33333 13.2267 3.03333 12.9267 2.66667 12.9267C2.3 12.9267 2 13.2267 2 13.5934V13.9934C2 14.8734 2.71333 15.5867 3.59333 15.5867H9.93333C10.8133 15.5867 11.5267 14.8734 11.5267 13.9934V11.9134V10.58V7.26002C11.52 6.38002 10.8067 5.66669 9.92667 5.66669Z"
+                        fill="#0B1E47"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="gw-reward-page__available-rewards__card">
+                <i
+                  class="gw-reward-page__available-rewards__icon gw-reward-page__available-rewards__percentage-discount"
+                >
+                  <svg
+                    width="32"
+                    height="32"
+                    viewBox="0 0 32 32"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M16 30.6667C13.1733 30.6667 10.4267 29.8667 8.06666 28.3333C7.45333 27.9333 7.26666 27.1067 7.66666 26.4933C8.06666 25.88 8.89333 25.6933 9.50666 26.0933C11.44 27.3467 13.6933 28 16 28C22.6133 28 28 22.6133 28 16C28 12.6667 26.6 9.45334 24.1467 7.18667C23.6 6.68001 23.5733 5.84001 24.08 5.30667C24.5867 4.76001 25.4267 4.73334 25.96 5.24001C28.9467 8.00001 30.6667 11.92 30.6667 16C30.6667 24.0933 24.0933 30.6667 16 30.6667Z"
+                      fill="#0B1E47"
+                    />
+                    <path
+                      d="M4.79999 24.56C4.35999 24.56 3.93333 24.3466 3.67999 23.9466C2.14666 21.5866 1.33333 18.84 1.33333 16C1.33333 7.90665 7.90666 1.33331 16 1.33331C19.7067 1.33331 23.24 2.71998 25.96 5.23998C26.5067 5.74665 26.5333 6.58665 26.0267 7.11998C25.52 7.65331 24.68 7.69331 24.1467 7.18665C21.92 5.13331 19.0267 3.99998 16 3.99998C9.38666 3.99998 3.99999 9.38665 3.99999 16C3.99999 18.32 4.66666 20.5733 5.91999 22.5066C6.31999 23.12 6.14666 23.9466 5.51999 24.3466C5.29333 24.4933 5.03999 24.56 4.79999 24.56Z"
+                      fill="#0B1E47"
+                    />
+                    <path
+                      d="M11.48 14.1466C12.9528 14.1466 14.1467 12.9527 14.1467 11.48C14.1467 10.0072 12.9528 8.81329 11.48 8.81329C10.0072 8.81329 8.81332 10.0072 8.81332 11.48C8.81332 12.9527 10.0072 14.1466 11.48 14.1466Z"
+                      fill="#0B1E47"
+                    />
+                    <path
+                      d="M20.4267 23.0933C21.8994 23.0933 23.0933 21.8994 23.0933 20.4267C23.0933 18.9539 21.8994 17.76 20.4267 17.76C18.9539 17.76 17.76 18.9539 17.76 20.4267C17.76 21.8994 18.9539 23.0933 20.4267 23.0933Z"
+                      fill="#0B1E47"
+                    />
+                    <path
+                      d="M10.48 22.8133C10.1333 22.8133 9.79999 22.68 9.53333 22.4266C9.01333 21.9066 9.01333 21.0666 9.53333 20.5466L20.5467 9.53331C21.0667 9.01331 21.9067 9.01331 22.4267 9.53331C22.9467 10.0533 22.9467 10.8933 22.4267 11.4133L11.4133 22.4266C11.16 22.6933 10.8133 22.8133 10.48 22.8133Z"
+                      fill="#0B1E47"
+                    />
+                  </svg>
+                </i>
+                <p class="gw-reward-page__available-rewards__card-text">
+                  Percentage discount
+                </p>
+
+                <form class="gw-reward-page__reward-item__redeem-form">
+                  <div class="gw-reward-page__reward-item__redeem-form__info">
+                    <div
+                      class="gw-reward-page__reward-item__redeem-form__info-column"
+                    >
+                      <span
+                        id="gw-reward-item__redeem-form__discount-amount"
+                        class="gw-reward-item__redeem-form__discount-amount"
+                        >10$</span
+                      >
+                      <span class="gw-reward-item__redeem-form__text"
+                        >Discount</span
+                      >
+                    </div>
+                    <div
+                      class="gw-reward-page__reward-item__redeem-form__info-column"
+                    >
+                      <span
+                        id="gw-reward-item__redeem-form__discount-price"
+                        class="gw-reward-item__redeem-form__discount-price"
+                        >200 points</span
+                      >
+                      <span class="gw-reward-item__redeem-form__text"
+                        >Discount price</span
+                      >
+                    </div>
+                  </div>
+                  <div
+                    class="gw-reward-page__reward-item__redeem-form__discount-range-wrapper"
+                  >
+                    <span
+                      class="gw-reward-page__reward-item__redeem-form__discount-min"
+                      >$10</span
+                    >
+                    <div
+                      class="gw-reward-page__reward-item__redeem-form__discount-range"
+                    >
+                      <input
+                        type="range"
+                        min="10"
+                        max="200"
+                        step="1"
+                        name="price"
+                      />
+                    </div>
+                    <span
+                      class="gw-reward-page__reward-item__redeem-form__discount-max"
+                      >$200</span
+                    >
+                  </div>
+                  <button class="gw-reward-page__card-btn">Redeem</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
