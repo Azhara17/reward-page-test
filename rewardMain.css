@@ -172,6 +172,9 @@
   font-weight: 400;
   font-size: 14px;
 }
+.gw-reward-page__section .gw-reward-page__card-btn_md {
+  font-size: 16px;
+}
 
 .gw-reward-page__card-btn {
   width: 195px;
@@ -179,7 +182,7 @@
   border: 1px solid #0b1e47;
   border-radius: 5px;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 12px;
   background: #fff;
 }
 
@@ -264,6 +267,7 @@
 .gw-reward-page__available-rewards__card-text {
   margin-bottom: 16px;
   margin-top: 12px;
+  font-size: 15px;
 }
 
 .gw-reward-page__reward-item {
@@ -282,11 +286,13 @@
 }
 .gw-reward-page__reward-item__redeem-form__info {
   display: flex;
+  font-size: 12px;
   border-bottom: 0.5px solid #0b1e47;
 }
 
 .gw-reward-page__reward-item__redeem-form__info-column {
   width: 50%;
+  padding: 12px 3px;
 }
 
 .gw-reward-page__reward-item__redeem-form__info-column:last-child {
@@ -299,4 +305,52 @@
 .gw-reward-page__reward-item__redeem-form__discount-range-wrapper {
   display: flex;
   justify-content: center;
+  margin-top: 21px;
+  margin-bottom: 25px;
+  font-size: 12px;
+}
+
+.gw-reward-item__redeem-form__discount-price,
+.gw-reward-item__redeem-form__discount-amount {
+  font-weight: 600;
+}
+
+.gw-reward-page__card-btn_dark {
+  color: #fff;
+  background-color: #0b1e47;
+}
+
+.gw-reward-page__reward-item__redeem-form__text {
+  font-size: 14px;
+}
+
+.gw-reward-page__reward-item__redeem-form__text_sm {
+  font-size: 12px;
+}
+
+.gw-reward-page__card-btn_sm {
+  width: 92px;
+}
+
+.gw-reward-page__available-rewards__card-exchange
+  .gw-reward-page__reward-item__redeem-form__info {
+  display: block;
+  border-bottom: none;
+}
+
+.gw-reward-page__available-rewards__card-exchange
+  .gw-reward-page__reward-item__redeem-form {
+  border-top: 0.5px solid #0b1e47;
+}
+
+.gw-reward-page__reward-item__redeem-form__text_sm {
+  margin-bottom: 20px;
+}
+
+.gw-reward-page__available-rewards__card-amount
+  .gw-reward-page__reward-item__redeem-form__info {
+  margin-top: 19.5px;
+  margin-bottom: 20px;
+  border-top: 0.5px solid #0b1e47;
+  border-bottom: none;
 }
