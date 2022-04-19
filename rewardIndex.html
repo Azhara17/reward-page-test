@@ -48,7 +48,7 @@
                 Rewards
               </div>
               <div
-                class="gw-reward-page__menu gw-active"
+                class="gw-reward-page__menu"
                 data-target="#ssw-reward-page-earning-rule-wrapper"
                 data-content-target=".ssw-reward-page-content"
               >
@@ -84,8 +84,17 @@
               </div>
             </div>
             <div class="gw-reward-page__header_right">
+                <i class="gw-reward-page__balance-icon">
+                    <svg width="20" height="22" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18.4555 3.34003H14.7996C14.9462 3.80003 15.0439 4.28003 15.0439 4.78003C15.0439 4.97003 15.0342 5.15003 15.0146 5.34003H18.4652C19.0029 5.34003 19.4428 4.89003 19.4428 4.34003C19.4428 3.79003 18.9931 3.34003 18.4555 3.34003Z" fill="#0B1E47"/>
+                    <path d="M3.1476 3.34003C1.4174 3.34003 0 4.78003 0 6.56003V14.51C0 15.06 0.439883 15.51 0.977517 15.51C1.51515 15.51 1.95503 15.06 1.95503 14.51V6.56003C1.95503 5.89003 2.49267 5.34003 3.1476 5.34003H5.71847C5.69892 5.15003 5.68915 4.97003 5.68915 4.78003C5.68915 4.27003 5.7869 3.79003 5.93353 3.34003H3.1476Z" fill="#0B1E47"/>
+                    <path d="M12.7077 11.14C12.1701 11.14 11.7302 11.59 11.7302 12.14C11.7302 12.69 12.1701 13.14 12.7077 13.14H18.0352V11.14H12.7077Z" fill="#0B1E47"/>
+                    <path d="M12.7077 14.78C12.1701 14.78 11.7302 15.23 11.7302 15.78C11.7302 16.33 12.1701 16.78 12.7077 16.78H18.0352V14.78H12.7077Z" fill="#0B1E47"/>
+                    <path d="M7.70289 5.34C7.67357 5.16 7.64424 4.97 7.64424 4.78C7.64424 4.25 7.80065 3.76 8.0548 3.34C8.52401 2.54 9.38422 2 10.3617 2C11.3393 2 12.1995 2.54 12.6785 3.34C12.9326 3.76 13.089 4.25 13.089 4.78C13.089 4.97 13.0597 5.15 13.0206 5.34C12.9717 5.57 12.9033 5.8 12.7958 6.02H14.8779C14.9365 5.8 14.9854 5.57 15.0049 5.34C15.0245 5.16 15.0343 4.97 15.0343 4.78C15.0343 4.27 14.9365 3.79 14.7899 3.34C14.1936 1.41 12.4439 0 10.3617 0C8.27963 0 6.52987 1.41 5.93359 3.34C5.78696 3.8 5.68921 4.28 5.68921 4.78C5.68921 4.97 5.69898 5.15 5.71853 5.34C5.74786 5.57 5.78696 5.79 5.84561 6.02H7.92772C7.8202 5.8 7.75177 5.57 7.70289 5.34Z" fill="#0B1E47"/>
+                    <path d="M17.4291 6.01001H14.8778H12.7957H7.92766H5.84555H3.62659C3.08895 6.01001 2.64907 6.46001 2.64907 7.01001C2.64907 7.56001 3.08895 8.01001 3.62659 8.01001H17.4291C17.7615 8.01001 18.0352 8.29001 18.0352 8.63001V11.13V13.13V14.77V16.77V18.77C18.0352 19.44 17.4976 19.99 16.8426 19.99H3.14761C2.49267 20 1.95503 19.45 1.95503 18.78C1.95503 18.23 1.51515 17.78 0.977517 17.78C0.439883 17.78 0 18.23 0 18.78C0 20.55 1.4174 22 3.14761 22H16.8426C18.5826 22 19.9902 20.55 19.9902 18.78V8.64001C20 7.19001 18.8465 6.01001 17.4291 6.01001Z" fill="#0B1E47"/>
+                    </svg>
+                    </i>
               <div class="gw-reward-page__balance">
-                <i class="gw-reward-page__balance-icon"></i>
                 <div class="gw-reward-page__balance-info">
                   <div class="gw-reward-page__balance-count">Your Balance</div>
                   <div class="gw-reward-page__balance-text">1200</div>
@@ -202,7 +211,10 @@
             >
               Available Rewards
               <i class="gw-reward-page__available-rewards__tooltip__icon"
-                ><svg
+                >
+                 <p class="gw-reward-page__available-rewards__tooltip">
+                    You decide how to spend your points
+                  </p><svg
                   width="22"
                   height="22"
                   viewBox="0 0 22 22"
@@ -240,14 +252,12 @@
                     </clipPath>
                   </defs>
                 </svg>
+               
               </i>
-              <p class="gw-reward-page__available-rewards__tooltip">
-                Here are the rewards that you have already earned and that you
-                can spend
-              </p>
+              
             </div>
             <div class="gw-reward-page__available-rewards__cards-wrapper">
-              <div class="gw-reward-page__available-rewards__card">
+              <div class="gw-reward-page__available-rewards__card gw-reward-page__available-rewards__card_sm">
                 <i
                   class="gw-reward-page__available-rewards__icon gw-reward-page__available-rewards__card-amount-discount"
                 >
@@ -300,7 +310,7 @@
                   </div>
                 </div>
               </div>
-              <div class="gw-reward-page__available-rewards__card">
+              <div class=" gw-reward-page__available-rewards__card gw-reward-page__available-rewards__card_sm">
                 <i
                   class="gw-reward-page__available-rewards__icon gw-reward-page__available-rewards__percentage-discount"
                 >
@@ -361,9 +371,9 @@
                   </div>
                 </div>
               </div>
-              <div class="gw-reward-page__available-rewards__card">
+              <div class="gw-reward-page__available-rewards__card gw-reward-page__available-rewards__card_sm">
                 <i
-                  class="gw-reward-page__available-rewards__icon gw-reward-page__available-rewards__percentage-discount"
+                  class="gw-reward-page__available-rewards__icon gw-reward-page__available-rewards__free-shipping"
                 >
                   <svg
                     width="32"
@@ -430,7 +440,45 @@
                   </div>
                 </div>
               </div>
+              <div class="gw-reward-page__available-rewards__card gw-reward-page__available-rewards__card_sm">
+                <i
+                  class="gw-reward-page__available-rewards__icon gw-reward-page__available-rewards__card-amount-discount"
+                >
+                  <svg
+                    width="30"
+                    height="30"
+                    viewBox="0 0 30 30"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M18.8066 29.3232C18.4557 29.3232 18.1182 29.1899 17.8482 28.9366L5.26714 16.4966C5.02415 16.2566 4.88916 15.9499 4.87567 15.6166L4.61918 10.2832C4.57869 9.5499 5.15914 8.92324 5.90159 8.88324C6.63054 8.85657 7.27849 9.41657 7.31898 10.1499L7.54847 14.9766L18.8201 26.1099L27.041 17.9899C27.5675 17.4699 28.4179 17.4699 28.9444 17.9899C29.4708 18.5099 29.4708 19.3499 28.9444 19.8699L19.7651 28.9366C19.4951 29.1899 19.1576 29.3232 18.8066 29.3232Z"
+                      fill="#0B1E47"
+                    />
+                    <path
+                      d="M24.963 16.47C24.6121 16.47 24.2746 16.3367 24.0046 16.0833L15.2168 7.40333L5.63246 6.95C5.29498 6.93667 4.98451 6.79 4.74152 6.56333L0.394846 2.27C-0.131615 1.75 -0.131615 0.91 0.394846 0.39C0.921307 -0.13 1.77174 -0.13 2.29821 0.39L6.28041 4.32333L15.8647 4.77667C16.2022 4.79 16.5127 4.93667 16.7556 5.16333L25.9215 14.2167C26.4479 14.7367 26.4479 15.5767 25.9215 16.0967C25.6515 16.3367 25.3005 16.47 24.963 16.47Z"
+                      fill="#0B1E47"
+                    />
+                    <path
+                      d="M12.3276 13.8301C13.4459 13.8301 14.3524 12.9346 14.3524 11.8301C14.3524 10.7255 13.4459 9.83008 12.3276 9.83008C11.2093 9.83008 10.3027 10.7255 10.3027 11.8301C10.3027 12.9346 11.2093 13.8301 12.3276 13.8301Z"
+                      fill="#0B1E47"
+                    />
+                  </svg>
+                </i>
+                <p class="gw-reward-page__available-rewards__card-text">
+                  Amount discount
+                </p>
+                <div class="gw-reward-page__reward-item">
+                  <div class="gw-reward-page__reward-item__code">
+                    <div class="gw-reward-page__reward-item__btn">
+                      AC92C41877B3
+                    </div>
+                    <p class="gw-reward-page__reward-item__code_success">Copied!</p>
+                  </div>
+                </div>
+              </div>
               <div class="gw-reward-page__available-rewards__card">
+                <button type="button" class="gw-close" data-dismiss="ssw-modal" aria-hidden="true">×</button>
                 <i
                   class="gw-reward-page__available-rewards__icon gw-reward-page__available-rewards__percentage-discount"
                 >
@@ -528,6 +576,7 @@
               <div
                 class="gw-reward-page__available-rewards__card gw-reward-page__available-rewards__card-exchange"
               >
+              <button type="button" class="gw-close" data-dismiss="ssw-modal" aria-hidden="true">×</button>
                 <i
                   class="gw-reward-page__available-rewards__icon gw-reward-page__available-rewards__percentage-discount"
                 >
@@ -590,11 +639,12 @@
                   </div>
                 </form>
               </div>
-            </div>
+   
 
             <div
               class="gw-reward-page__available-rewards__card gw-reward-page__available-rewards__card-amount"
             >
+            <button type="button" class="gw-close" data-dismiss="ssw-modal" aria-hidden="true">×</button>
               <i
                 class="gw-reward-page__available-rewards__icon gw-reward-page__available-rewards__card-amount-discount"
               >
@@ -681,7 +731,7 @@
               </form>
             </div>
 
-            <div class="gw-reward-page__available-rewards__card">
+            <div class="gw-reward-page__available-rewards__card gw-reward-page__available-rewards__card_sm">
               <i
                 class="gw-reward-page__available-rewards__icon gw-reward-page__available-rewards__card-amount-discount"
               >
@@ -715,8 +765,8 @@
                 Redeem
               </button>
             </div>
-          </div>
-          <div class="gw-reward-page__available-rewards__card">
+         
+          <div class="gw-reward-page__available-rewards__card gw-reward-page__available-rewards__card_sm">
             <i
               class="gw-reward-page__available-rewards__icon gw-reward-page__available-rewards__card-gift-card"
             >
@@ -751,7 +801,7 @@
             </button>
           </div>
 
-          <div class="gw-reward-page__available-rewards__card">
+          <div class="gw-reward-page__available-rewards__card gw-reward-page__available-rewards__card_sm">
             <i
               class="gw-reward-page__available-rewards__icon gw-reward-page__available-rewards__card-free-product"
             >
@@ -790,6 +840,14 @@
             </button>
           </div>
         </div>
+       <div class="gw-text-center">
+        <i class="gw-icon-angle-down">
+            <svg width="30" height="10" viewBox="0 0 33 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M31.5 1L16.4963 11L1.5 0.999999" stroke="#0B1E47" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"/>
+            </svg>
+        </i>
+        <a href="javascript:void(0);" class="gw-reward__load-more-link" data-load-type="spending_rules">see more</a>
+            </div>
       </div>
     </div>
   </body>

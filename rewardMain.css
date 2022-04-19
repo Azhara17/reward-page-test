@@ -11,6 +11,7 @@
 .gw-reward-page__banner {
   width: 100%;
   max-height: 300px;
+  object-fit: cover;
 }
 
 .gw-reward-page__banner-content {
@@ -36,6 +37,7 @@
   border: 1px solid #0b1e47;
   box-sizing: border-box;
   border-radius: 6px;
+  cursor: pointer;
 }
 
 .gw-container .ssw-reward-btn {
@@ -65,20 +67,43 @@
 }
 
 .gw-reward-page__header {
+  max-width: 1216px;
+  margin: 0 auto 20px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
   background-color: #fff;
-  margin-bottom: 20px;
-  padding: 6px;
   box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
 }
 
+.gw-reward-page__header .gw-active {
+  background: rgba(0, 186, 238, 0.05);
+  font-weight: 600;
+  border-bottom: 3px solid #0b1e47;
+}
+
 .gw-reward-page__menu {
+  width: 150px;
   font-size: 16px;
   font-weight: 400;
   letter-spacing: 0.01em;
+  cursor: pointer;
+  padding: 29px 0;
+  text-align: center;
+}
+
+.gw-reward-page__balance-icon {
+  margin-top: 12px;
+}
+
+.gw-reward-page__balance {
+  margin-left: 18px;
+}
+
+.gw-reward-page__tier {
+  text-align: center;
+  padding-right: 16px;
 }
 
 .gw-reward-page__balance-count,
@@ -128,8 +153,15 @@
   transform: rotate(90deg);
 }
 
+.gw-reward-page__free-bonuses-content .gw-reward-page__card {
+  width: 240px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .gw-reward-page__card {
-  width: 33%;
+  display: inline-block;
   max-width: 145px;
   text-align: left;
 }
@@ -146,10 +178,12 @@
 }
 
 .gw-reward-page__section-card {
-  padding: 0 200px;
+  max-width: 1040px;
+  margin: 0 auto;
   display: flex;
   text-align: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .gw-reward-page__card-number {
@@ -171,6 +205,7 @@
 .gw-reward-page__card-text {
   font-weight: 400;
   font-size: 14px;
+  color: rgba(11, 30, 71, 0.6);
 }
 .gw-reward-page__section .gw-reward-page__card-btn_md {
   font-size: 16px;
@@ -196,10 +231,15 @@
   display: block;
 }
 
+.gw-reward-page__redeem-points-content .gw-reward-page__card {
+  max-width: 205px;
+}
+
 .gw-reward-page__redeem-points-content-text {
   margin-bottom: 80px;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .gw-reward-page__redeem-points {
@@ -207,8 +247,18 @@
   background: rgba(11, 30, 71, 0.03);
 }
 
+.gw-reward-page__redeem-points .gw-reward-page__card-number {
+  font-size: 28px;
+  background: linear-gradient(
+    334.32deg,
+    #0b1e47 43.38%,
+    rgba(11, 30, 71, 0.62) 94.12%
+  );
+}
+
 .gw-reward-page__available-rewards {
-  padding: 185px 200px;
+  max-width: 1040px;
+  margin: 0 auto;
 }
 
 .gw-reward-page__available-rewards__title {
@@ -224,10 +274,15 @@
   font-size: 14px;
   font-weight: 400;
   background-color: rgba(11, 30, 71, 0.04);
+  border-radius: 3px;
 }
 
 .gw-reward-page__available-rewards__tooltip__icon {
+  display: flex;
+  flex-direction: row-reverse;
   margin-left: 5px;
+  font-style: initial;
+  cursor: pointer;
 }
 
 .gw-reward-page__available-rewards__tooltip__icon:hover
@@ -237,14 +292,28 @@
 
 .gw-reward-page__available-rewards__card {
   width: fit-content;
+  width: 200px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 0 32px 20px 0;
-  padding: 22px;
+  margin-bottom: 20px;
+  padding: 16px;
   text-align: center;
   border-radius: 5%;
   box-shadow: -2px 2px 20px rgba(0, 0, 0, 0.05);
+}
+
+.gw-reward-page__available-rewards__card_sm {
+  height: 147px;
+}
+
+.gw-reward-page__available-rewards__card .gw-close {
+  width: 15px;
+  margin-left: 90%;
+  background: none;
+  border: none;
+  font-size: 15px;
+  cursor: pointer;
 }
 
 .gw-reward-page__available-rewards__icon {
@@ -261,6 +330,7 @@
 .gw-reward-page__available-rewards__cards-wrapper {
   display: flex;
   justify-content: space-between;
+  align-items: end;
   flex-wrap: wrap;
 }
 
@@ -277,8 +347,21 @@
   border-radius: 6px;
 }
 
+.gw-reward-page__reward-item__btn {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.gw-reward-page__reward-item__code_success {
+  margin: 0;
+  font-size: 12px;
+  color: #008060;
+}
+
 .gw-reward-page__reward-item__code {
-  display: inline-flex;
+  display: flex;
+  justify-content: space-between;
+  line-height: 1em;
 }
 
 .gw-reward-page__reward-item__copy-icon {
@@ -304,10 +387,23 @@
 
 .gw-reward-page__reward-item__redeem-form__discount-range-wrapper {
   display: flex;
-  justify-content: center;
+  justify-content: spa;
   margin-top: 21px;
   margin-bottom: 25px;
   font-size: 12px;
+}
+
+.gw-reward-page__reward-item__redeem-form__discount-range-wrapper span {
+  margin-top: 3px;
+}
+
+.gw-reward-page__reward-item__redeem-form__discount-range input {
+  height: 2px;
+}
+
+.gw-reward-page__reward-item__redeem-form__discount-range
+  input[type="range"]::-webkit-slider-thumb {
+  color: #fff;
 }
 
 .gw-reward-item__redeem-form__discount-price,
@@ -353,4 +449,110 @@
   margin-bottom: 20px;
   border-top: 0.5px solid #0b1e47;
   border-bottom: none;
+}
+
+.gw-text-center {
+  text-align: center;
+}
+
+.gw-reward__load-more-link {
+  text-decoration: none;
+}
+
+.gw-icon-angle-down {
+  display: block;
+  margin-top: 60px;
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+}
+input[type="range"]:focus {
+  outline: none;
+}
+input[type="range"]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 2px;
+  cursor: pointer;
+  box-shadow: 0px 0px 0px #000000;
+  background: #0b1e47;
+  border-radius: 1px;
+  border: 0px solid #000000;
+}
+input[type="range"]::-webkit-slider-thumb {
+  box-shadow: 0px 0px 0px #000000;
+  border: 0.295732px solid rgba(0, 0, 0, 0.04);
+  box-shadow: 0px 1.77439px 4.73171px rgba(0, 0, 0, 0.15),
+    0px 0.591463px 0.591463px rgba(0, 0, 0, 0.16),
+    0px 1.77439px 0.591463px rgba(0, 0, 0, 0.1);
+  height: 16px;
+  width: 16px;
+  border-radius: 25px;
+  background: #fbfbfb;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -7.5px;
+}
+input[type="range"]:focus::-webkit-slider-runnable-track {
+  background: #0b1e47;
+}
+input[type="range"]::-moz-range-track {
+  width: 100%;
+  height: 2px;
+  cursor: pointer;
+  box-shadow: 0px 0px 0px #000000;
+  background: #0b1e47;
+  border-radius: 1px;
+  border: 0px solid #000000;
+}
+input[type="range"]::-moz-range-thumb {
+  box-shadow: 0px 0px 0px #000000;
+  border: 0.295732px solid rgba(0, 0, 0, 0.04);
+  box-shadow: 0px 1.77439px 4.73171px rgba(0, 0, 0, 0.15),
+    0px 0.591463px 0.591463px rgba(0, 0, 0, 0.16),
+    0px 1.77439px 0.591463px rgba(0, 0, 0, 0.1);
+  height: 16px;
+  width: 16px;
+  border-radius: 25px;
+  background: #fbfbfb;
+  cursor: pointer;
+}
+input[type="range"]::-ms-track {
+  width: 100%;
+  height: 2px;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+input[type="range"]::-ms-fill-lower {
+  background: #0b1e47;
+  border: 0px solid #000000;
+  border-radius: 2px;
+  box-shadow: 0px 0px 0px #000000;
+}
+input[type="range"]::-ms-fill-upper {
+  background: #0b1e47;
+  border: 0px solid #000000;
+  border-radius: 2px;
+  box-shadow: 0px 0px 0px #000000;
+}
+input[type="range"]::-ms-thumb {
+  margin-top: 1px;
+  box-shadow: 0px 0px 0px #000000;
+  border: 0.295732px solid rgba(0, 0, 0, 0.04);
+  box-shadow: 0px 1.77439px 4.73171px rgba(0, 0, 0, 0.15),
+    0px 0.591463px 0.591463px rgba(0, 0, 0, 0.16),
+    0px 1.77439px 0.591463px rgba(0, 0, 0, 0.1);
+  height: 16px;
+  width: 16px;
+  border-radius: 25px;
+  background: #fbfbfb;
+  cursor: pointer;
+}
+input[type="range"]:focus::-ms-fill-lower {
+  background: #0b1e47;
+}
+input[type="range"]:focus::-ms-fill-upper {
+  background: #0b1e47;
 }
