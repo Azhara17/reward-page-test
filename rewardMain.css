@@ -1,4 +1,6 @@
+/*Desktop styles*/
 * {
+  box-sizing: border-box;
   font-family: "Eina 01", sans-serif;
   color: #0b1e47;
 }
@@ -17,7 +19,7 @@
 .gw-reward-page__banner-content {
   width: 100%;
   position: absolute;
-  top: 15%;
+  top: 60px;
 }
 
 .gw-reward-page__banner-header {
@@ -31,7 +33,6 @@
   font-style: normal;
   font-weight: 600;
   font-size: 20px;
-  line-height: 28px;
   color: #0b1e47;
   background: #ffffff;
   border: 1px solid #0b1e47;
@@ -131,7 +132,7 @@
 }
 
 .gw-reward-page__header_right {
-  width: 20%;
+  width: 22%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -167,7 +168,7 @@
 }
 
 .gw-reward-page__section {
-  padding: 80px 0;
+  padding: 80px 50px;
 }
 
 .gw-reward-page__section-title {
@@ -212,7 +213,7 @@
 }
 
 .gw-reward-page__card-btn {
-  width: 195px;
+  width: 194px;
   padding: 11px;
   border: 1px solid #0b1e47;
   border-radius: 5px;
@@ -267,9 +268,11 @@
 }
 
 .gw-reward-page__available-rewards__tooltip {
+  position: absolute;
   width: fit-content;
   display: none;
-  margin-top: -15px;
+  left: 33%;
+  margin-top: -35px;
   padding: 8px 12px;
   font-size: 14px;
   font-weight: 400;
@@ -292,19 +295,14 @@
 
 .gw-reward-page__available-rewards__card {
   width: fit-content;
-  width: 200px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-bottom: 20px;
+  margin: 0 5px 20px 5px;
   padding: 16px;
   text-align: center;
   border-radius: 5%;
   box-shadow: -2px 2px 20px rgba(0, 0, 0, 0.05);
-}
-
-.gw-reward-page__available-rewards__card_sm {
-  height: 147px;
 }
 
 .gw-reward-page__available-rewards__card .gw-close {
@@ -347,7 +345,7 @@
   border-radius: 6px;
 }
 
-.gw-reward-page__reward-item__btn {
+.gw-reward-page__reward-item__code {
   font-size: 12px;
   font-weight: 600;
 }
@@ -358,7 +356,7 @@
   color: #008060;
 }
 
-.gw-reward-page__reward-item__code {
+.gw-reward-page__reward-item__code-wrapper {
   display: flex;
   justify-content: space-between;
   line-height: 1em;
@@ -555,4 +553,106 @@ input[type="range"]:focus::-ms-fill-lower {
 }
 input[type="range"]:focus::-ms-fill-upper {
   background: #0b1e47;
+}
+
+@media only screen and (max-width: 847px) {
+  .gw-reward-page__available-rewards__cards-wrapper {
+    justify-content: center;
+  }
+  .gw-reward-page__section-title {
+    text-align: center;
+  }
+  .gw-reward-page__free-bonuses-content .gw-reward-page__card-btn {
+    width: auto;
+  }
+  .gw-reward-page__redeem-points-content .gw-reward-page__card {
+    width: 145px;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .gw-reward-page__section-card {
+    display: block;
+  }
+  .gw-reward-page__card,
+  .gw-reward-page__section-card,
+  .gw-reward-page__redeem-points-content .gw-reward-page__card {
+    width: 250px;
+    max-width: unset;
+    text-align: center;
+  }
+
+  .gw-reward-page__card {
+    margin-bottom: 30px;
+  }
+  .gw-reward-page__card-number {
+    margin: 20px auto;
+  }
+  .gw-reward-page__redeem-points-content-text {
+    justify-content: center;
+  }
+  .gw-reward-page__available-rewards .gw-reward-page__section-title {
+    width: 280px;
+    margin: 0 auto 42px;
+  }
+  .gw-reward-page__available-rewards__tooltip {
+    left: 25%;
+  }
+}
+/*IPad Mini styles*/
+@media only screen and (max-width: 744px) {
+  .gw-reward-page__banner {
+    height: 155px;
+  }
+  .gw-reward-page__banner-content {
+    top: 35px;
+  }
+  .gw-reward-page__banner-join {
+    width: 130px;
+    height: 23px;
+    margin-top: 0;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 10px;
+  }
+  .gw-reward-page__banner-join {
+    border: 0.2px solid #0b1e47;
+  }
+  .gw-reward-page__banner-header {
+    font-size: 20px;
+  }
+  .gw-reward-page__header_left {
+    width: 72%;
+  }
+  .gw-reward-page__header_right {
+    width: 24%;
+  }
+  .gw-reward-page__menu {
+    width: auto;
+    font-size: 12px;
+    padding: 14px;
+  }
+  .gw-reward-page__section {
+    padding: 50px;
+  }
+  .gw-reward-page__header .gw-active {
+    border-bottom: 2px solid #0b1e47;
+  }
+  .gw-reward-page__balance-icon svg {
+    width: 11px;
+    height: 11px;
+  }
+  .gw-reward-page__balance-icon {
+    margin-right: -27px;
+  }
+
+  .gw-reward-page__balance-text,
+  .gw-reward-page__tier-status,
+  .gw-reward-page__banner-text {
+    font-size: 12px;
+  }
+  .gw-reward-page__balance-count,
+  .gw-reward-page__tier-text {
+    font-size: 10px;
+  }
 }
