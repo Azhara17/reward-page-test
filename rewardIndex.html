@@ -31,7 +31,7 @@
             <button
               class="gw-reward-page__banner-join gw-fsize-ms"
               data-toggle="ssw-modal"
-              data-target="#login_modal"
+              aria-controls="#login_modal"
             >
               Join
             </button>
@@ -39,50 +39,54 @@
         </div>
         <div class="gw-reward-page__content">
           <div class="gw-reward-page__header">
-            <div class="gw-reward-page__header_left">
-              <div
-                class="gw-reward-page__menu gw-active"
-                data-target="#ssw-reward-page-rewards-wrapper"
-                data-content-target=".ssw-reward-page-content"
-              >
-                Rewards
-              </div>
-              <div
-                class="gw-reward-page__menu"
-                data-target="#ssw-reward-page-earning-rule-wrapper"
-                data-content-target=".ssw-reward-page-content"
-              >
-                Earn Points
-              </div>
-              <div
+            <ul class="gw-reward-page__header_left">
+              <li
+              id="gw-reward-page__menu-rewards"
+                class="gw-reward-page__menu gw-reward-page__menu-rewards gw-active"
+                role="tab"
+                aria-controls="#gw-reward-page__rewards-wrapper"
+              ><a href="#gw-reward-page__rewards-wrapper">Rewards</a>                
+            </li>
+              <li
+              id="gw-reward-page__menu-earn-points"
+                class="gw-reward-page__menu gw-reward-page__earn-points"
+                role="tab"
+                aria-controls="#gw-reward-page__earning-rule-wrapper"               
+              ><a href="#gw-reward-page__earning-rule-wrapper">Earn Points</a>              
+        </li>
+              <li
+              id="gw-reward-page__menu-viptiers"
                 class="gw-reward-page__menu gw-reward-page__menu-viptiers"
-                data-target="#ssw-reward-page-tiers-wrapper"
-                data-content-target=".ssw-reward-page-content"
-              >
-                Tiers
-              </div>
-              <div
+                role="tab"
+                aria-controls="#gw-reward-page__viptiers-wrapper"     
+              ><a href="#gw-reward-page__viptiers-wrapper">Tiers</a>
+                
+    </li>
+              <li
+              id="gw-reward-page__menu-referral"
                 class="gw-reward-page__menu gw-reward-page__menu-referral"
-                data-target=""
-                data-content-target=".ssw-reward-page-content"
-              >
-                Referral Program
-              </div>
-              <div
-                class="gw-reward-page__menu"
-                data-target="#ssw-reward-page-activity-wrapper"
-                data-content-target=".ssw-reward-page-content"
-              >
-                History
-              </div>
-              <div
-                class="gw-reward-page__menu"
-                data-target="#ssw-reward-page-faq-wrapper"
-                data-content-target=".ssw-reward-page-content"
-              >
-                FAQ
-              </div>
-            </div>
+                role="tab"
+                aria-controls="#gw-reward-page__referral-wrapper"        
+              > <a href="#gw-reward-page__referral-wrapper">Referral Program</a>
+                
+</li>
+              <li
+              id="gw-reward-page__menu-history"
+                class="gw-reward-page__menu gw-reward-page__menu-history"
+                role="tab"
+                aria-controls="#gw-reward-page__history-wrapper"   
+              ><a href="#gw-reward-page__history-wrapper">History</a>
+                
+</li>
+              <li
+              id="gw-reward-page__menu-faq"
+                class="gw-reward-page__menu gw-reward-page__menu-faq"
+                role="tab"
+                aria-controls="#gw-reward-page__faq-wrapper"      
+              ><a href="#gw-reward-page__faq-wrapper">FAQ</a>
+                
+</li>
+</ul>
             <div class="gw-reward-page__header_right">
               <div class="gw-reward-page__balance">
                 <i class="gw-reward-page__balance-icon">
@@ -106,7 +110,8 @@
                 <div class="gw-reward-page__tier-status">Gold</div>
               </div>
             </div>
-          </div>
+        </div>
+          <div id="gw-reward-page__rewards-wrapper" class="gw-reward-page__rewards-wrapper" role="tabpanel" aria-labelledby="gw-reward-page__menu-rewards">
           <div class="gw-reward-page__section gw-reward-page__free-bonuses">
             <div
               class="gw-reward-page__section-title gw-reward-page__free-bonuses-title"
@@ -850,5 +855,6 @@
             </div>
       </div>
     </div>
+</div>
   </body>
 </html>

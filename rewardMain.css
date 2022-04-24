@@ -37,7 +37,7 @@
   background: #ffffff;
   border: 1px solid #0b1e47;
   box-sizing: border-box;
-  border-radius: 6px;
+  border-radius: 3px;
   cursor: pointer;
 }
 
@@ -85,7 +85,7 @@
 }
 
 .gw-reward-page__menu {
-  width: 150px;
+  width: -webkit-fill-available;
   height: 80px;
   font-size: 16px;
   font-weight: 400;
@@ -93,6 +93,11 @@
   cursor: pointer;
   padding: 25px 0;
   text-align: center;
+  list-style: none;
+}
+
+.gw-reward-page__menu a {
+  text-decoration: none;
 }
 
 .gw-reward-page__balance-icon {
@@ -143,6 +148,8 @@
 
 .gw-reward-page__header_left {
   width: 75%;
+  margin: 0;
+  padding: 0;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -949,7 +956,7 @@ input[type="range"]:focus::-ms-fill-upper {
     font-size: 20px;
   }
   .gw-reward-page__section.gw-reward-page__redeem-points {
-    padding: 40px 34px;
+    padding: 40px 29px;
   }
   .gw-reward-page__header .gw-active {
     border-bottom: 2px solid #0b1e47;
